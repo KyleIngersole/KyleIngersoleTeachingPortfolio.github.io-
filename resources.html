@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Template: Spectral by HTML5 UP
+	Author: @ajlkn
+	Source: https://html5up.net
+	License: Creative Commons Attribution 3.0 (https://html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Kyle's Teaching Portfolio - Home </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Teaching Portfolio</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About Me</a></li>
+											<li><a href="projects.html">Project Showcase</a></li>
+											<li><a href="resources.html">Resources</a></li>
+											<li><a href="resume.html">Resume</a></li>
+											<li><a href="contact.html">Contact Me</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Teaching Portfolio</h2>
+							<p>Kyle Ingersole</p>
+						</div>
+						<a href="#one" class="more scrolly">More</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Kyle's Teaching Portfolio - Resources</h2>
+								<p>Content </p>
+								<p>Stage 4 Resources <br />
+								Stage 5 Units of Work <br />
+								Stage 6 Resources <br />
+								Grade Converters</p>
+							</header>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Resources</h2>
+								<p>The following contains resources that you can download and adapt for your own work.</p>
+							</header>
+							<ul class="features">
+								<li>
+									<a href="assets/css/docs/Stage5_Textiles_Technology_Unit_of_Work.pdf" target="_blank" rel="noopener">
+                        				<img src="images/Stage5TextilesUoWThumb.png" class="center"> 
+									</a>
+									<h3>Stage 5 Textiles Technology - Sample Unit of Work from NESA</h3>
+									<p>Scope & Sequence, outcomes, resources, and assessment overview.</p>
+								</li>
+								<li>
+									<a href="assets/css/docs/Stage5_Food_Technology_Unit_of_Work.pdf" target="_blank" rel="noopener">
+                       					<img src="images/Stage5FoodUoWThumb.png" class="center">
+                    				</a>
+									<h3>Stage 5 Food Technology - Sample Unit of Work from NESA</h3>
+									<p>Scope & sequence, outcomes, resources, and assessment overview.</p>
+								</li>
+								<li>
+									<a href="assets/css/docs/CareersInFoodSlideDeck.pptx" download="Careers-In-Food.pptx" type="application/pptx" aria-label="Download Slideshow">
+                        				<img src="images/CareersInFoodSlides.png" class="center">
+                    				</a>
+									<h3>Stage 4 Food Technology - Food Industry Careers Slideshow</h3>
+									<p>A relevant resource for teaching Stage 4 Food Technology, introducing career opportunities relevant to the food industry.</p>
+								</li>
+								<li>
+									<iframe src="https://www.youtube.com/embed/X5-yAJszoB0?si=V_-wkYcxCEGDjqrT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+									<h3>Example of Food Product Redesign</h3>
+									<p>This video is a suitable resource for demonstrating how a Food Technologist can utilise an existing product to recreate and/or redesign a product.</p>
+								</li>
+								<li>
+									<a href="assets/css/docs/SurfaceDesignPrintingSlideDeck.pptx" download="Surface-Design-Printing.pptx" type="application/pptx" aria-label="Download Slideshow">
+                        				<img src="Images/SurfaceDesignPrintingSlides.png" class="center">
+                    				</a>
+									<h3>Stage 6 Textiles and Design - Surface Design Slideshow</h3>
+									<p>A relevant resource for teaching Stage 6 Textiles and Design, focusing on surface design through the various methods of printing.</p>
+								</li>
+								<li>
+									<iframe src="https://www.youtube.com/embed/fbRYM4UH__o?si=Bu9rsDpBJK9OeETC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+									<h3>Example of Pattern and Dress Making</h3>
+									<p>This video is a suitable resource for demonstrating how to develop, produce, and manage the design process of a dress.</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+                <!-- Three -->
+					<section id="two" class="wrapper style2">
+                        <div class="content2">
+							<h2 style="text-align: center;">Grade Converter</h2>
+							<p style="text-align: center;">The following contains a grade converter to convert student grades into the NESA grade scale.</p>
+							<input id="markInput" type="number" placeholder="Enter a number (0-100)" class="input-spaced">
+							<button onclick="convertGrade()" class="button-spaced primary">Convert</button>
+							<button onclick="clearGrade()" class="button-spaced">Clear</button>
+							<p style="text-align: center; margin-top: 10px;" id="gradeOutput"></p>
+						</div>	
+					<script>
+						function convertGrade() {
+							const raw = document.getElementById("markInput").value;
+							const mark = parseInt(raw, 10);
+
+							// validate 
+							if (isNaN(mark) || mark < 0 || mark > 100) {
+								document.getElementById("gradeOutput").innerText = "Please enter a valid mark between 0 and 100."; 
+								return;
+							}
+
+							// decide NESA A-E scale grade
+							let grade; // A, B, C, D, E
+							if (mark >= 90) grade = "A Grade";
+							else if (mark >= 80) grade = "B Grade";
+							else if (mark >=65) grade = "C Grade";
+							else if (mark >=50) grade = "D Grade";
+							else grade = "E Grade";
+							document.getElementById("gradeOutput").innerText = `Results: ${grade}`;
+						}
+
+						//clear
+						function clearGrade() {
+							document.getElementById("gradeOutput").innerText = "";
+							document.getElementById("markInput").value = "";
+						}
+					</script>
+            </section>
+                    </section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; 2025 Kyle Ingersole. All rights reserved.</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
