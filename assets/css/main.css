@@ -1847,8 +1847,7 @@ input, select, textarea {
 	}
 
 	input[type="number"],
-	select,
-	textarea {
+	select {
 		-moz-appearace: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
