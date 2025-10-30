@@ -2576,6 +2576,11 @@ input, select, textarea {
   margin-right: auto;
 }
 
+.button-spaced2 {
+  display: block;       /* makes the button respect margin properly */
+  margin-top: 20px;    /* same vertical spacing unit as above */
+}
+
 .input-spaced {
   display: block;       /* makes the input respect margin properly */
   margin-bottom: 20px;    /* same vertical spacing unit as above */
