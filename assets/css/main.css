@@ -2585,13 +2585,6 @@ input, select, textarea {
   margin-right: auto;
 }
 
-.content-align-centre {
-  display: block;       /* makes the input respect margin properly */
-  margin-bottom: 20px;    /* same vertical spacing unit as above */
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Features */
 
 	.features {
